@@ -15,7 +15,7 @@
     var codiad = global.codiad;
 
     $(function () {
-        codiad.autocomplete.init(); 
+        codiad.cocojs.init(); 
     });
 	
 	$.ajax({'url':'https://lushmatch.com/code/x_get_functions.php','success':function(data){
@@ -34,7 +34,7 @@
     //
     //////////////////////////////////////////////////////////////////
 
-    codiad.autocomplete = {
+    codiad.cocojs = {
         wordRegex: /[^a-zA-Z_0-9\$]+/,
         isVisible: false,
         standardGoLineDownExec: null,
