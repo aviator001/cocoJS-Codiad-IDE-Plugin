@@ -1,0 +1,13 @@
+[{
+    "author"	: "Gautam Sharma",
+    "version"	: "0.1",
+    "name"		: "cocojs",
+	"url"		: "https://github.com/Codiad/Codiad-Plugin-Template",
+    "rightbar": [
+        {
+            "action": "codiad.cocojs.connect();",
+            "icon": "icon-info-circled",
+            "title": "<input type='button' style="background:silver" value='Connect to CoCoJS' onclick='alert(\'coming soon\')'>"
+        }
+    ]
+}]
