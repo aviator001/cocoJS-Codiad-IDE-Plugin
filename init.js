@@ -15,7 +15,7 @@
     var codiad = global.codiad;
 
     $(function () {
-        codiad.cocojs.init(); 
+        codiad.autocomplete.init(); 
     });
 	
 	$.ajax({'url':'https://lushmatch.com/code/x_get_functions.php','success':function(data){
@@ -26,6 +26,25 @@
 			fullfns.push(x[k].function_body)
 		}}
 	})
+	
+
+	//Load all JS libraries
+		script = document.createElement('script');
+		script.src = 'https://terrawire.com/assets/js/jquery-confirm.js';
+		script.async = false;
+		document.head.appendChild(script);
+
+	//	Load All CSS files
+	['https://gaysugardaddyfinder.com/assets/css/effects.css','https://txt.am/assets/css/magic.css','https://txt.am/assets/css/stream.css','https://terrawire.com/assets/css/jquery-confirm.css'].forEach(function(src) {
+		cb(src)
+	});	
+	
+	function cb(src) {
+		var l = document.createElement('link'); l.rel = 'stylesheet';
+		l.href = src;
+		var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+	};
+		
     //////////////////////////////////////////////////////////////////
     //
     // Autocomplete Component for Codiad
@@ -34,7 +53,7 @@
     //
     //////////////////////////////////////////////////////////////////
 
-    codiad.cocojs = {
+    codiad.autocomplete = {
         wordRegex: /[^a-zA-Z_0-9\$]+/,
         isVisible: false,
         standardGoLineDownExec: null,
