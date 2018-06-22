@@ -2,7 +2,7 @@
     "author"	: "Gautam Sharma",
     "version"	: "0.1",
     "name"		: "cocojs",
-	"url"		: "https://github.com/Codiad/Codiad-Plugin-Template",
+	"url"		: "git@github.com:aviator001/cocojs-js-function-manager.git",
     "rightbar": [
         {
             "action": "codiad.cocojs.connect();",
